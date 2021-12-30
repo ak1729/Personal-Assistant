@@ -15,24 +15,24 @@ void greetings(){
     tm *time = localtime(&now);
 
     if (time-> tm_hour < 12){
-        cout<< "Good Morning Anurag"<<endl;
-        string phrase = "Good Morning Anurag";
+        cout<< "Good Morning"<<endl;
+        string phrase = "Good Morning";
         string command = "espeak \"" + phrase + "\"";
         const char *charCommand = command.c_str();
         system(charCommand);
     }
 
     else if (time-> tm_hour >= 12 && time->tm_hour <= 16){
-        cout<< "Good Afternoon Anurag"<<endl;
-        string phrase = "Good Afternoon Anurag";
+        cout<< "Good Afternoon"<<endl;
+        string phrase = "Good Afternoon";
         string command = "espeak \"" + phrase + "\"";
         const char *charCommand = command.c_str();
         system(charCommand);
     }
 
     else if (time-> tm_hour > 16 && time->tm_hour < 24){
-        cout<< "Good Evening Anurag"<<endl;
-        string phrase = "Good Evening Anurag";
+        cout<< "Good Evening"<<endl;
+        string phrase = "Good Evening";
         string command = "espeak \"" + phrase + "\"";
         const char *charCommand = command.c_str();
         system(charCommand);
